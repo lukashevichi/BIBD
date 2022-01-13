@@ -1,0 +1,14 @@
+{
+  "name": "bibd_polyclinic",
+  "version": "1.0",
+  "private": true,
+  "workspaces": [
+    "packages\\bibd_polyclinic"
+  ],
+  "resolutions": {},
+  "devDependencies": {},
+  "dependencies": {},
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": []
+}

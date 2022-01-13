@@ -1,0 +1,15 @@
+D:\Projects VS\MaxLab\NextLabApp\bin\Debug\net6.0\NextLabApp.exe
+D:\Projects VS\MaxLab\NextLabApp\bin\Debug\net6.0\NextLabApp.deps.json
+D:\Projects VS\MaxLab\NextLabApp\bin\Debug\net6.0\NextLabApp.runtimeconfig.json
+D:\Projects VS\MaxLab\NextLabApp\bin\Debug\net6.0\NextLabApp.dll
+D:\Projects VS\MaxLab\NextLabApp\bin\Debug\net6.0\ref\NextLabApp.dll
+D:\Projects VS\MaxLab\NextLabApp\bin\Debug\net6.0\NextLabApp.pdb
+D:\Projects VS\MaxLab\NextLabApp\obj\Debug\net6.0\NextLabApp.csproj.AssemblyReference.cache
+D:\Projects VS\MaxLab\NextLabApp\obj\Debug\net6.0\NextLabApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects VS\MaxLab\NextLabApp\obj\Debug\net6.0\NextLabApp.AssemblyInfoInputs.cache
+D:\Projects VS\MaxLab\NextLabApp\obj\Debug\net6.0\NextLabApp.AssemblyInfo.cs
+D:\Projects VS\MaxLab\NextLabApp\obj\Debug\net6.0\NextLabApp.csproj.CoreCompileInputs.cache
+D:\Projects VS\MaxLab\NextLabApp\obj\Debug\net6.0\NextLabApp.dll
+D:\Projects VS\MaxLab\NextLabApp\obj\Debug\net6.0\ref\NextLabApp.dll
+D:\Projects VS\MaxLab\NextLabApp\obj\Debug\net6.0\NextLabApp.pdb
+D:\Projects VS\MaxLab\NextLabApp\obj\Debug\net6.0\NextLabApp.genruntimeconfig.cache

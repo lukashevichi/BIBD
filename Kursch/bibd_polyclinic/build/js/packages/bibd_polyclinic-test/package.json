@@ -1,0 +1,20 @@
+{
+  "name": "bibd_polyclinic-test",
+  "version": "1.0.0",
+  "main": "kotlin/bibd_polyclinic-test.js",
+  "devDependencies": {},
+  "dependencies": {
+    "react": "> 14.0.0 <=16.9.0",
+    "bibd_polyclinic": "1.0.0",
+    "kotlin-test": "file:D:\\BSUIR\\ASOI4.1\\BIBD\\Kursch\\bibd_polyclinic\\build\\js\\packages_imported\\kotlin-test\\1.5.10",
+    "kotlin": "file:D:\\BSUIR\\ASOI4.1\\BIBD\\Kursch\\bibd_polyclinic\\build\\js\\packages_imported\\kotlin\\1.5.10",
+    "kotlin-wrappers-kotlin-react-js-legacy": "file:D:\\BSUIR\\ASOI4.1\\BIBD\\Kursch\\bibd_polyclinic\\build\\js\\packages_imported\\kotlin-wrappers-kotlin-react-js-legacy\\1.0.0-SNAPSHOT",
+    "kotlin-wrappers-kotlin-extensions-js-legacy": "file:D:\\BSUIR\\ASOI4.1\\BIBD\\Kursch\\bibd_polyclinic\\build\\js\\packages_imported\\kotlin-wrappers-kotlin-extensions-js-legacy\\1.0.1-pre.206-kotlin-1.5.10",
+    "kotlin-wrappers-kotlin-react-dom-js-legacy": "file:D:\\BSUIR\\ASOI4.1\\BIBD\\Kursch\\bibd_polyclinic\\build\\js\\packages_imported\\kotlin-wrappers-kotlin-react-dom-js-legacy\\1.0.0-SNAPSHOT",
+    "kotlinx-html-js": "file:D:\\BSUIR\\ASOI4.1\\BIBD\\Kursch\\bibd_polyclinic\\build\\js\\packages_imported\\kotlinx-html-js\\0.7.3",
+    "kotlin-test-js-runner": "file:D:\\BSUIR\\ASOI4.1\\BIBD\\Kursch\\bibd_polyclinic\\build\\js\\packages_imported\\kotlin-test-js-runner\\1.5.10"
+  },
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": []
+}

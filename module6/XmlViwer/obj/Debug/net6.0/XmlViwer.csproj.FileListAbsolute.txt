@@ -1,0 +1,23 @@
+D:\Projects VS\MaxLab\XmlViwer\bin\Debug\net6.0\XmlViwer.exe
+D:\Projects VS\MaxLab\XmlViwer\bin\Debug\net6.0\XmlViwer.deps.json
+D:\Projects VS\MaxLab\XmlViwer\bin\Debug\net6.0\XmlViwer.runtimeconfig.json
+D:\Projects VS\MaxLab\XmlViwer\bin\Debug\net6.0\XmlViwer.dll
+D:\Projects VS\MaxLab\XmlViwer\bin\Debug\net6.0\ref\XmlViwer.dll
+D:\Projects VS\MaxLab\XmlViwer\bin\Debug\net6.0\XmlViwer.pdb
+D:\Projects VS\MaxLab\XmlViwer\obj\Debug\net6.0\XmlViwer.csproj.AssemblyReference.cache
+D:\Projects VS\MaxLab\XmlViwer\obj\Debug\net6.0\XmlViwer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects VS\MaxLab\XmlViwer\obj\Debug\net6.0\XmlViwer.AssemblyInfoInputs.cache
+D:\Projects VS\MaxLab\XmlViwer\obj\Debug\net6.0\XmlViwer.AssemblyInfo.cs
+D:\Projects VS\MaxLab\XmlViwer\obj\Debug\net6.0\XmlViwer.csproj.CoreCompileInputs.cache
+D:\Projects VS\MaxLab\XmlViwer\obj\Debug\net6.0\XmlViwer.dll
+D:\Projects VS\MaxLab\XmlViwer\obj\Debug\net6.0\ref\XmlViwer.dll
+D:\Projects VS\MaxLab\XmlViwer\obj\Debug\net6.0\XmlViwer.pdb
+D:\Projects VS\MaxLab\XmlViwer\obj\Debug\net6.0\XmlViwer.genruntimeconfig.cache
+D:\BSUIR\ASOI4.1\BIBD\Practice\module6\XmlViwer\obj\Debug\net6.0\XmlViwer.csproj.AssemblyReference.cache
+D:\BSUIR\ASOI4.1\BIBD\Practice\module6\XmlViwer\obj\Debug\net6.0\XmlViwer.GeneratedMSBuildEditorConfig.editorconfig
+D:\BSUIR\ASOI4.1\BIBD\Practice\module6\XmlViwer\obj\Debug\net6.0\XmlViwer.AssemblyInfoInputs.cache
+D:\BSUIR\ASOI4.1\BIBD\Practice\module6\XmlViwer\obj\Debug\net6.0\XmlViwer.AssemblyInfo.cs
+D:\BSUIR\ASOI4.1\BIBD\Practice\module6\XmlViwer\obj\Debug\net6.0\XmlViwer.csproj.CoreCompileInputs.cache
+D:\BSUIR\ASOI4.1\BIBD\Practice\module6\XmlViwer\obj\Debug\net6.0\XmlViwer.dll
+D:\BSUIR\ASOI4.1\BIBD\Practice\module6\XmlViwer\obj\Debug\net6.0\ref\XmlViwer.dll
+D:\BSUIR\ASOI4.1\BIBD\Practice\module6\XmlViwer\obj\Debug\net6.0\XmlViwer.pdb
