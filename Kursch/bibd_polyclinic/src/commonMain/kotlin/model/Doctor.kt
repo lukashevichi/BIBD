@@ -1,4 +1,4 @@
-package me.x99.model
+package model
 
 data class Doctor(
     val id: Int,
