@@ -1,13 +1,11 @@
 package me.x99.routing.data
 
-import io.ktor.application.call
-import io.ktor.request.receive
-import io.ktor.response.respond
-import io.ktor.routing.Route
-import io.ktor.routing.get
-import io.ktor.routing.post
-import io.ktor.routing.route
+import io.ktor.server.application.*
+import io.ktor.server.request.*
+import io.ktor.server.response.*
+import io.ktor.server.routing.*
 import me.x99.repo.PatientRepo
+import model.Patient
 
 fun Route.patientRoute(patientRepo: PatientRepo) {
     route("/patient") {
@@ -26,7 +24,7 @@ fun Route.patientRoute(patientRepo: PatientRepo) {
         }
 
         post("/create") {
-            val receivedUser = call.receive(me.x99.model.Patient::class)
+            val receivedUser = call.receive(Patient::class)
             call.respond(patientRepo.create(receivedUser))
         }
     }

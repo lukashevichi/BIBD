@@ -1,14 +1,12 @@
 package me.x99.repo
 
-import io.ktor.routing.get
 import me.x99.database.DiagnosisTable
-import me.x99.model.Diagnosis
+import model.Diagnosis
 import org.jetbrains.exposed.sql.ResultRow
 import org.jetbrains.exposed.sql.insert
 import org.jetbrains.exposed.sql.select
 import org.jetbrains.exposed.sql.selectAll
 import org.jetbrains.exposed.sql.transactions.transaction
-import java.util.*
 
 class DiagnosisRepo {
     suspend fun create(diagnosis: Diagnosis) {

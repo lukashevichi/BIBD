@@ -2,8 +2,8 @@ package me.x99.repo
 
 import me.x99.database.DiagnosisTable
 import me.x99.database.PatientCardTable
-import me.x99.model.Diagnosis
-import me.x99.model.PatientCard
+import model.Diagnosis
+import model.PatientCard
 import org.jetbrains.exposed.sql.*
 import org.jetbrains.exposed.sql.SqlExpressionBuilder.eq
 import org.jetbrains.exposed.sql.transactions.transaction

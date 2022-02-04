@@ -25,4 +25,24 @@ fun DiagnosisTable.setData() {
         it[id] = 5
         it[name] = "Грип"
     }
+    this.insert {
+        it[id] = 6
+        it[name] = "Гепатит"
+    }
+    this.insert {
+        it[id] = 7
+        it[name] = "Деменция"
+    }
+    this.insert {
+        it[id] = 8
+        it[name] = "Желчнокаменная болезнь"
+    }
+    this.insert {
+        it[id] = 9
+        it[name] = "Инсульт"
+    }
+    this.insert {
+        it[id] = 10
+        it[name] = "Клещевой энцефалит"
+    }
 }

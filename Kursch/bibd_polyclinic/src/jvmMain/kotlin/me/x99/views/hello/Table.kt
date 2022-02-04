@@ -1,7 +1,7 @@
 package me.x99.views.hello
 
 import kotlinx.html.*
-import me.x99.model.*
+import model.*
 
 fun <T> HTML.table(
     patients: List<T>

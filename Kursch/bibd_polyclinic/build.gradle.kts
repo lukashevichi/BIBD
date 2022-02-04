@@ -16,8 +16,9 @@ version = "1.0"
 
 repositories {
     mavenCentral()
-    maven { url = uri("https://maven.pkg.jetbrains.space/public/p/ktor/eap") }
     jcenter()
+    maven { url = uri("https://maven.pkg.jetbrains.space/public/p/ktor/eap") }
+    maven { url = uri("https://maven.pkg.jetbrains.space/kotlin/p/kotlin/kotlin-js-wrappers") }
 }
 
 kotlin {
@@ -50,12 +51,18 @@ kotlin {
                 implementation("org.jetbrains.kotlinx:kotlinx-html-jvm:0.7.2")
                 implementation("io.ktor:ktor-server-core:$ktor_version")
                 implementation("io.ktor:ktor-server-netty:$ktor_version")
-                implementation("io.ktor:ktor-html-builder:$ktor_version")
-                implementation("io.ktor:ktor-freemarker:$ktor_version")
-                implementation ("io.ktor:ktor-gson:$ktor_version")
+                implementation("io.ktor:ktor-server-html-builder:$ktor_version")
+                implementation("io.ktor:ktor-server-freemarker:$ktor_version")
+                implementation("io.ktor:ktor-server-auth:$ktor_version")
+                implementation("io.ktor:ktor-server-sessions:$ktor_version")
+                implementation("io.ktor:ktor-server-auto-head-response:$ktor_version")
+                implementation("io.ktor:ktor-serialization-gson:$ktor_version")
+                implementation("io.ktor:ktor-server-sessions:$ktor_version")
+                implementation("io.ktor:ktor-server-auto-head-response:$ktor_version")
+                implementation("io.ktor:ktor-server-call-logging:$ktor_version")
+                implementation("io.ktor:ktor-server-content-negotiation:$ktor_version")
 
                 implementation("ch.qos.logback:logback-classic:$logback_version")
-                implementation("io.ktor:ktor-gson:$ktor_version")
 
                 //exposed to connect sql
                 implementation("org.jetbrains.exposed:exposed-core:$exposed_version")
@@ -93,6 +100,11 @@ tasks.named<Copy>("jvmProcessResources") {
 tasks.named<JavaExec>("run") {
     dependsOn(tasks.named<Jar>("jvmJar"))
     classpath(tasks.named<Jar>("jvmJar"))
+}
+buildscript {
+    dependencies {
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10")
+    }
 }
 
 tasks {

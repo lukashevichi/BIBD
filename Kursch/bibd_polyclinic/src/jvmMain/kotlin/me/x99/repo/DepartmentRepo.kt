@@ -1,7 +1,7 @@
 package me.x99.repo
 
 import me.x99.database.DepartmentTable
-import me.x99.model.Department
+import model.Department
 import org.jetbrains.exposed.sql.*
 import org.jetbrains.exposed.sql.transactions.transaction
 import java.util.*

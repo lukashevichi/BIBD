@@ -1,8 +1,8 @@
 package me.x99.views.patients
 
 import kotlinx.html.*
-import me.x99.model.Doctor
-import me.x99.model.Patient
+import model.Doctor
+import model.Patient
 
 
 fun HTML.patientsTable(

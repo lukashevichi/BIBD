@@ -1,13 +1,11 @@
-package me.x99.routing
+package me.x99.routing.data
 
-import io.ktor.application.call
-import io.ktor.request.receive
-import io.ktor.response.respond
-import io.ktor.routing.Route
-import io.ktor.routing.get
-import io.ktor.routing.post
-import io.ktor.routing.route
+import io.ktor.server.application.*
+import io.ktor.server.request.*
+import io.ktor.server.response.*
+import io.ktor.server.routing.*
 import me.x99.repo.DepartmentRepo
+import model.Department
 
 fun Route.departmentRoute(departmentRepo: DepartmentRepo) {
     route("/department") {
@@ -26,7 +24,7 @@ fun Route.departmentRoute(departmentRepo: DepartmentRepo) {
         }
 
         post("/create") {
-            val receivedDepartment = call.receive(me.x99.model.Department::class)
+            val receivedDepartment = call.receive(Department::class)
             call.respond(departmentRepo.create(receivedDepartment))
         }
     }

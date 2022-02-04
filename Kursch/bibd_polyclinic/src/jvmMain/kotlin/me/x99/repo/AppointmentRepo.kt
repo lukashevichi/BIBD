@@ -4,10 +4,12 @@ import me.x99.database.AppointmentTable
 import me.x99.database.DepartmentTable
 import me.x99.database.DoctorTable
 import me.x99.database.PatientTable
-import me.x99.model.Appointment
-import me.x99.model.Department
-import me.x99.model.Doctor
-import me.x99.model.Patient
+import me.x99.database.PatientTable.name
+import me.x99.database.PatientTable.surname
+import model.Appointment
+import model.Department
+import model.Doctor
+import model.Patient
 import org.jetbrains.exposed.sql.*
 import org.jetbrains.exposed.sql.SqlExpressionBuilder.eq
 import org.jetbrains.exposed.sql.transactions.transaction
@@ -27,14 +29,21 @@ class AppointmentRepo {
 
     suspend fun getAll(): List<Appointment> {
         return transaction {
-            AppointmentTable.selectAll().toDoctors()
+            AppointmentTable.selectAll().toAppointments()
         }
     }
 
     suspend fun get(id: Int): Appointment? {
         return transaction {
             AppointmentTable.select { AppointmentTable.id eq id }
-                .toDoctors().firstOrNull()
+                .toAppointments().firstOrNull()
+        }
+    }
+
+    suspend fun getByPatients(patientId: Int): Appointment? {
+        return transaction {
+            AppointmentTable.select { AppointmentTable.patientId eq patientId }
+                .toAppointments().firstOrNull()
         }
     }
 
@@ -46,12 +55,12 @@ class AppointmentRepo {
         }
     }
 
-    private fun Query.toDoctors() = this.map {
+    private fun Query.toAppointments() = this.map {
         val doctor = DoctorTable.select(DoctorTable.id eq it[AppointmentTable.doctorId]).map { doctorRow ->
             val department =
                 DepartmentTable.select(DepartmentTable.id eq doctorRow[DoctorTable.departmentId])
                     .firstOrNull()?.toDepartment()
-            doctorRow.toDoctors(department)
+            doctorRow.toAppointments(department)
         }.firstOrNull()
         val patient: Patient =
             PatientTable.select(PatientTable.id eq it[AppointmentTable.patientId]).first().toPatient()
@@ -68,7 +77,7 @@ class AppointmentRepo {
         )
     }
 
-    private fun ResultRow.toDoctors(department: Department?): Doctor {
+    private fun ResultRow.toAppointments(department: Department?): Doctor {
         return Doctor(
             id = this[DoctorTable.id].value,
             name = this[DoctorTable.name],
@@ -82,8 +91,10 @@ class AppointmentRepo {
     private fun ResultRow.toPatient(): Patient {
         return Patient(
             id = this[PatientTable.id].value,
-            name = this[PatientTable.name],
-            surname = this[PatientTable.surname]
+//            login = this[login],
+//            psw = this[psw],
+            name = this[name],
+            surname = this[surname]
         )
     }
 

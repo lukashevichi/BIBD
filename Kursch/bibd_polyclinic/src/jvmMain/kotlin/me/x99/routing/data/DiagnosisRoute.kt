@@ -1,13 +1,11 @@
-package me.x99.routing
+package me.x99.routing.data
 
-import io.ktor.application.call
-import io.ktor.request.receive
-import io.ktor.response.respond
-import io.ktor.routing.Route
-import io.ktor.routing.get
-import io.ktor.routing.post
-import io.ktor.routing.route
+import io.ktor.server.application.*
+import io.ktor.server.request.*
+import io.ktor.server.response.*
+import io.ktor.server.routing.*
 import me.x99.repo.DiagnosisRepo
+import model.Diagnosis
 
 fun Route.diagnosisRoute(diagnosisRepo: DiagnosisRepo) {
     route("/diagnosis") {
@@ -26,7 +24,7 @@ fun Route.diagnosisRoute(diagnosisRepo: DiagnosisRepo) {
         }
 
         post("/create") {
-            val receivedDiagnosis = call.receive(me.x99.model.Diagnosis::class)
+            val receivedDiagnosis = call.receive(Diagnosis::class)
             call.respond(diagnosisRepo.create(receivedDiagnosis))
         }
     }

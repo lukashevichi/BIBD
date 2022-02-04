@@ -1,13 +1,13 @@
 package me.x99.routing.view
 
-import io.ktor.application.*
-import io.ktor.html.*
+import io.ktor.server.application.*
+import io.ktor.server.routing.*
 import io.ktor.http.*
-import io.ktor.http.content.*
-import io.ktor.routing.*
-import me.x99.model.*
+import io.ktor.server.html.*
+import io.ktor.server.http.content.*
 import me.x99.repo.*
 import me.x99.views.form
+import model.*
 
 fun Route.addPatientsViewRouting(patientRepo: PatientRepo) {
     route("/add_patients_view") {

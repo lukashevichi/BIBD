@@ -3,7 +3,15 @@
   "version": "1.0",
   "private": true,
   "workspaces": [
-    "packages\\bibd_polyclinic"
+    "packages\\bibd_polyclinic",
+    "packages\\bibd_polyclinic-test",
+    "packages_imported\\kotlin\\1.6.10",
+    "packages_imported\\kotlin-wrappers-kotlin-react-js-legacy\\1.0.0-SNAPSHOT",
+    "packages_imported\\kotlin-wrappers-kotlin-extensions-js-legacy\\1.0.1-pre.206-kotlin-1.5.10",
+    "packages_imported\\kotlin-wrappers-kotlin-react-dom-js-legacy\\1.0.0-SNAPSHOT",
+    "packages_imported\\kotlinx-html-js\\0.7.3",
+    "packages_imported\\kotlin-test-js-runner\\1.6.10",
+    "packages_imported\\kotlin-test\\1.6.10"
   ],
   "resolutions": {},
   "devDependencies": {},

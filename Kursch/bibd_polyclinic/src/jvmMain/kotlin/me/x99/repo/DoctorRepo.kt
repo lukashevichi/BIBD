@@ -2,8 +2,8 @@ package me.x99.repo
 
 import me.x99.database.DepartmentTable
 import me.x99.database.DoctorTable
-import me.x99.model.Department
-import me.x99.model.Doctor
+import model.Department
+import model.Doctor
 import org.jetbrains.exposed.sql.*
 import org.jetbrains.exposed.sql.SqlExpressionBuilder.eq
 import org.jetbrains.exposed.sql.transactions.transaction
