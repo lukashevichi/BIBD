@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Запись к врачу</string>
+    <string name="title_home">Главная</string>
+    <string name="title_dashboard">Быстрая</string>
+    <string name="title_notifications">Уведомления</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Почта</string>
+    <string name="prompt_password">Пароль</string>
+    <string name="prompt_name">Имя</string>
+    <string name="prompt_surname">Фамилия</string>
+    <string name="action_sign_in">Вход или регистрация</string>
+    <string name="action_sign_in_short">Вход</string>
+    <string name="welcome">"Добро пожаловать!"</string>
+    <string name="invalid_username">Не верное имя</string>
+    <string name="invalid_password">Пароль должен быть больше 5 символов</string>
+    <string name="login_failed">"Неудачно!"</string>
+    <string name="hello_blank_fragment">Приветственная страница</string>
+</resources>
