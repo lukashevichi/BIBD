@@ -13,11 +13,11 @@ let config = {
 
 // entry
 config.entry = {
-    main: ["D:\\BSUIR\\ASOI4.1\\BIBD\\Practice\\Kursch\\bibd_polyclinic\\build\\js\\packages\\bibd_polyclinic\\kotlin-dce\\bibd_polyclinic.js"]
+    main: ["E:\\BSUIR\\ASOI4.1\\BIBD\\Practice\\Kursch\\bibd_polyclinic\\build\\js\\packages\\bibd_polyclinic\\kotlin-dce\\bibd_polyclinic.js"]
 };
 
 config.output = {
-    path: "D:\\BSUIR\\ASOI4.1\\BIBD\\Practice\\Kursch\\bibd_polyclinic\\build\\distributions",
+    path: "E:\\BSUIR\\ASOI4.1\\BIBD\\Practice\\Kursch\\bibd_polyclinic\\build\\distributions",
     filename: (chunkData) => {
         return chunkData.chunk.name === 'main'
             ? "bibd_polyclinic.js"
@@ -29,7 +29,7 @@ config.output = {
 };
 
 // resolve modules
-config.resolve.modules.unshift("D:\\BSUIR\\ASOI4.1\\BIBD\\Practice\\Kursch\\bibd_polyclinic\\build\\js\\packages\\bibd_polyclinic\\kotlin-dce")
+config.resolve.modules.unshift("E:\\BSUIR\\ASOI4.1\\BIBD\\Practice\\Kursch\\bibd_polyclinic\\build\\js\\packages\\bibd_polyclinic\\kotlin-dce")
 
 // source maps
 config.module.rules.push({
@@ -47,7 +47,7 @@ config.ignoreWarnings = [/Failed to parse source map/]
     const handler = (percentage, message, ...args) => {
         const p = percentage * 100;
         let msg = `${Math.trunc(p / 10)}${Math.trunc(p % 10)}% ${message} ${args.join(' ')}`;
-        msg = msg.replace("D:\\BSUIR\\ASOI4.1\\BIBD\\Practice\\Kursch\\bibd_polyclinic\\build\\js", '');;
+        msg = msg.replace("E:\\BSUIR\\ASOI4.1\\BIBD\\Practice\\Kursch\\bibd_polyclinic\\build\\js", '');;
         console.log(msg);
     };
 
@@ -94,7 +94,7 @@ config.ignoreWarnings = [/Failed to parse source map/]
     const util = require('util');
     const fs = require('fs');
     const evaluatedConfig = util.inspect(config, {showHidden: false, depth: null, compact: false});
-    fs.writeFile("D:\\BSUIR\\ASOI4.1\\BIBD\\Practice\\Kursch\\bibd_polyclinic\\build\\reports\\webpack\\bibd_polyclinic\\webpack.config.evaluated.js", evaluatedConfig, function (err) {});
+    fs.writeFile("E:\\BSUIR\\ASOI4.1\\BIBD\\Practice\\Kursch\\bibd_polyclinic\\build\\reports\\webpack\\bibd_polyclinic\\webpack.config.evaluated.js", evaluatedConfig, function (err) {});
 })(config);
 
 module.exports = config

@@ -2,7 +2,7 @@
   mode: 'production',
   resolve: {
     modules: [
-      'D:\\BSUIR\\ASOI4.1\\BIBD\\Practice\\Kursch\\bibd_polyclinic\\build\\js\\packages\\bibd_polyclinic\\kotlin-dce',
+      'E:\\BSUIR\\ASOI4.1\\BIBD\\Practice\\Kursch\\bibd_polyclinic\\build\\js\\packages\\bibd_polyclinic\\kotlin-dce',
       'node_modules'
     ]
   },
@@ -46,11 +46,11 @@
   },
   entry: {
     main: [
-      'D:\\BSUIR\\ASOI4.1\\BIBD\\Practice\\Kursch\\bibd_polyclinic\\build\\js\\packages\\bibd_polyclinic\\kotlin-dce\\bibd_polyclinic.js'
+      'E:\\BSUIR\\ASOI4.1\\BIBD\\Practice\\Kursch\\bibd_polyclinic\\build\\js\\packages\\bibd_polyclinic\\kotlin-dce\\bibd_polyclinic.js'
     ]
   },
   output: {
-    path: 'D:\\BSUIR\\ASOI4.1\\BIBD\\Practice\\Kursch\\bibd_polyclinic\\build\\distributions',
+    path: 'E:\\BSUIR\\ASOI4.1\\BIBD\\Practice\\Kursch\\bibd_polyclinic\\build\\distributions',
     filename: [Function: filename],
     library: 'bibd_polyclinic',
     libraryTarget: 'umd',
