@@ -15,8 +15,8 @@ class PatientRepo {
         transaction {
             PatientTable.insert {
                 it[id] = UUID.randomUUID().hashCode()
-//                it[login] = patient.login
-//                it[psw] = patient.psw
+                it[login] = patient.login
+                it[psw] = patient.psw
                 it[name] = patient.name
                 it[surname] = patient.surname
             }
@@ -39,11 +39,23 @@ class PatientRepo {
         }
     }
 
+    suspend fun get(login: String, psw: String): Patient? {
+        return transaction {
+            PatientTable
+                .select {
+                    PatientTable.login eq login
+                    PatientTable.psw eq psw
+                }
+                .map { it.toPatient() }
+                .firstOrNull()
+        }
+    }
+
     private fun ResultRow.toPatient(): Patient {
         return Patient(
             id = this[PatientTable.id].value,
-//            login = this[PatientTable.login],
-//            psw = this[PatientTable.psw],
+            login = this[PatientTable.login],
+            psw = this[PatientTable.psw],
             name = this[PatientTable.name],
             surname = this[PatientTable.surname]
         )

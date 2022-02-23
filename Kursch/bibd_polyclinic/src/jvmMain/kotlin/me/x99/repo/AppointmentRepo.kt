@@ -4,7 +4,9 @@ import me.x99.database.AppointmentTable
 import me.x99.database.DepartmentTable
 import me.x99.database.DoctorTable
 import me.x99.database.PatientTable
+import me.x99.database.PatientTable.login
 import me.x99.database.PatientTable.name
+import me.x99.database.PatientTable.psw
 import me.x99.database.PatientTable.surname
 import model.Appointment
 import model.Department
@@ -91,8 +93,8 @@ class AppointmentRepo {
     private fun ResultRow.toPatient(): Patient {
         return Patient(
             id = this[PatientTable.id].value,
-//            login = this[login],
-//            psw = this[psw],
+            login = this[login],
+            psw = this[psw],
             name = this[name],
             surname = this[surname]
         )

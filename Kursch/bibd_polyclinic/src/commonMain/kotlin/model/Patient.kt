@@ -2,11 +2,10 @@ package model
 
 data class Patient(
     val id: Int,
-//    val login: String,
-//    val psw: String,
-//
     val name: String,
-    val surname: String
-){
-    constructor() : this(-999, "", "")
+    val surname: String,
+    val login: String,
+    val psw: String
+) {
+    constructor() : this(-999, "", "", "", "")
 }

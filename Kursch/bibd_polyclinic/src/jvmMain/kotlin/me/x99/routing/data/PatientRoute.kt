@@ -1,5 +1,6 @@
 package me.x99.routing.data
 
+import io.ktor.http.*
 import io.ktor.server.application.*
 import io.ktor.server.request.*
 import io.ktor.server.response.*
@@ -25,7 +26,21 @@ fun Route.patientRoute(patientRepo: PatientRepo) {
 
         post("/create") {
             val receivedUser = call.receive(Patient::class)
-            call.respond(patientRepo.create(receivedUser))
+            call.respond(HttpStatusCode.Created, patientRepo.create(receivedUser))
+        }
+
+        get("/{login}/{psw}") {
+            val login = call.parameters["login"]
+                ?: throw IllegalArgumentException("Parameter patient email not found")
+
+            val psw = call.parameters["psw"]
+                ?: throw IllegalArgumentException("Parameter patient email not found")
+
+            patientRepo.get(login = login, psw = psw)
+                ?.let { patient -> call.respond(patient) }
+                ?: kotlin.run {
+                    call.respond(HttpStatusCode.NoContent, "patient not found")
+                }
         }
     }
 }

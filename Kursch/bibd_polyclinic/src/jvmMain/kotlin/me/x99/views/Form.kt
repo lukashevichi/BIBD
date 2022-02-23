@@ -78,7 +78,9 @@ fun <T> HTML.form(empty: T) {
             val data = Patient(
                 (name.textContent + surname.textContent).hashCode(),
                 name.textContent,
-                surname.textContent
+                surname.textContent,
+                "",
+                ""
             )
             val response: HttpResponse = client.post("http://localhost:8080${getAction()}") {
                 contentType(ContentType.Application.Json)

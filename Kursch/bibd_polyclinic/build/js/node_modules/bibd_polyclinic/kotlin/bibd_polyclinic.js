@@ -228,10 +228,12 @@
   Doctor.prototype.equals = function (other) {
     return this === other || (other !== null && (typeof other === 'object' && (Object.getPrototypeOf(this) === Object.getPrototypeOf(other) && (Kotlin.equals(this.id, other.id) && Kotlin.equals(this.name, other.name) && Kotlin.equals(this.surname, other.surname) && Kotlin.equals(this.cabinet, other.cabinet) && Kotlin.equals(this.telephone, other.telephone) && Kotlin.equals(this.department, other.department)))));
   };
-  function Patient(id, name, surname) {
+  function Patient(id, name, surname, login, psw) {
     this.id = id;
     this.name = name;
     this.surname = surname;
+    this.login = login;
+    this.psw = psw;
   }
   Patient.$metadata$ = {
     kind: Kind_CLASS,
@@ -240,7 +242,7 @@
   };
   function Patient_init($this) {
     $this = $this || Object.create(Patient.prototype);
-    Patient.call($this, -999, '', '');
+    Patient.call($this, -999, '', '', '', '');
     return $this;
   }
   Patient.prototype.component1 = function () {
@@ -252,21 +254,29 @@
   Patient.prototype.component3 = function () {
     return this.surname;
   };
-  Patient.prototype.copy_s4fhmi$ = function (id, name, surname) {
-    return new Patient(id === void 0 ? this.id : id, name === void 0 ? this.name : name, surname === void 0 ? this.surname : surname);
+  Patient.prototype.component4 = function () {
+    return this.login;
+  };
+  Patient.prototype.component5 = function () {
+    return this.psw;
+  };
+  Patient.prototype.copy_fcibhm$ = function (id, name, surname, login, psw) {
+    return new Patient(id === void 0 ? this.id : id, name === void 0 ? this.name : name, surname === void 0 ? this.surname : surname, login === void 0 ? this.login : login, psw === void 0 ? this.psw : psw);
   };
   Patient.prototype.toString = function () {
-    return 'Patient(id=' + Kotlin.toString(this.id) + (', name=' + Kotlin.toString(this.name)) + (', surname=' + Kotlin.toString(this.surname)) + ')';
+    return 'Patient(id=' + Kotlin.toString(this.id) + (', name=' + Kotlin.toString(this.name)) + (', surname=' + Kotlin.toString(this.surname)) + (', login=' + Kotlin.toString(this.login)) + (', psw=' + Kotlin.toString(this.psw)) + ')';
   };
   Patient.prototype.hashCode = function () {
     var result = 0;
     result = result * 31 + Kotlin.hashCode(this.id) | 0;
     result = result * 31 + Kotlin.hashCode(this.name) | 0;
     result = result * 31 + Kotlin.hashCode(this.surname) | 0;
+    result = result * 31 + Kotlin.hashCode(this.login) | 0;
+    result = result * 31 + Kotlin.hashCode(this.psw) | 0;
     return result;
   };
   Patient.prototype.equals = function (other) {
-    return this === other || (other !== null && (typeof other === 'object' && (Object.getPrototypeOf(this) === Object.getPrototypeOf(other) && (Kotlin.equals(this.id, other.id) && Kotlin.equals(this.name, other.name) && Kotlin.equals(this.surname, other.surname)))));
+    return this === other || (other !== null && (typeof other === 'object' && (Object.getPrototypeOf(this) === Object.getPrototypeOf(other) && (Kotlin.equals(this.id, other.id) && Kotlin.equals(this.name, other.name) && Kotlin.equals(this.surname, other.surname) && Kotlin.equals(this.login, other.login) && Kotlin.equals(this.psw, other.psw)))));
   };
   function PatientCard(id, number, address, telephone, dateOfEstablishment, diagnosis) {
     this.id = id;
