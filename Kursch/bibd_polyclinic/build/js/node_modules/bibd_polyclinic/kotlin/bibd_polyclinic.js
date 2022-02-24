@@ -333,6 +333,46 @@
   PatientCard.prototype.equals = function (other) {
     return this === other || (other !== null && (typeof other === 'object' && (Object.getPrototypeOf(this) === Object.getPrototypeOf(other) && (Kotlin.equals(this.id, other.id) && Kotlin.equals(this.number, other.number) && Kotlin.equals(this.address, other.address) && Kotlin.equals(this.telephone, other.telephone) && Kotlin.equals(this.dateOfEstablishment, other.dateOfEstablishment) && Kotlin.equals(this.diagnosis, other.diagnosis)))));
   };
+  function Root(id, telephone, polyclinicName, address) {
+    this.id = id;
+    this.telephone = telephone;
+    this.polyclinicName = polyclinicName;
+    this.address = address;
+  }
+  Root.$metadata$ = {
+    kind: Kind_CLASS,
+    simpleName: 'Root',
+    interfaces: []
+  };
+  Root.prototype.component1 = function () {
+    return this.id;
+  };
+  Root.prototype.component2 = function () {
+    return this.telephone;
+  };
+  Root.prototype.component3 = function () {
+    return this.polyclinicName;
+  };
+  Root.prototype.component4 = function () {
+    return this.address;
+  };
+  Root.prototype.copy_cgs6fs$ = function (id, telephone, polyclinicName, address) {
+    return new Root(id === void 0 ? this.id : id, telephone === void 0 ? this.telephone : telephone, polyclinicName === void 0 ? this.polyclinicName : polyclinicName, address === void 0 ? this.address : address);
+  };
+  Root.prototype.toString = function () {
+    return 'Root(id=' + Kotlin.toString(this.id) + (', telephone=' + Kotlin.toString(this.telephone)) + (', polyclinicName=' + Kotlin.toString(this.polyclinicName)) + (', address=' + Kotlin.toString(this.address)) + ')';
+  };
+  Root.prototype.hashCode = function () {
+    var result = 0;
+    result = result * 31 + Kotlin.hashCode(this.id) | 0;
+    result = result * 31 + Kotlin.hashCode(this.telephone) | 0;
+    result = result * 31 + Kotlin.hashCode(this.polyclinicName) | 0;
+    result = result * 31 + Kotlin.hashCode(this.address) | 0;
+    return result;
+  };
+  Root.prototype.equals = function (other) {
+    return this === other || (other !== null && (typeof other === 'object' && (Object.getPrototypeOf(this) === Object.getPrototypeOf(other) && (Kotlin.equals(this.id, other.id) && Kotlin.equals(this.telephone, other.telephone) && Kotlin.equals(this.polyclinicName, other.polyclinicName) && Kotlin.equals(this.address, other.address)))));
+  };
   function main$lambda$lambda($receiver) {
     return Unit;
   }
@@ -927,6 +967,7 @@
   package$model.Patient = Patient;
   package$model.PatientCard_init = PatientCard_init;
   package$model.PatientCard = PatientCard;
+  package$model.Root = Root;
   _.main = main;
   $$importsForInline$$['kotlinx-html-js'] = $module$kotlinx_html_js;
   var package$view = _.view || (_.view = {});

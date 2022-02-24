@@ -7,7 +7,13 @@ fun AppointmentTable.setData() {
     this.insert {
         it[doctorId] = 1
         it[patientId] = 2
-        it[date] = "13:00:00"
-        it[time] = "28.12.2022"
+        it[date] = "2022-02-24"
+        it[time] = "13:00:00"
+    }
+    this.insert {
+        it[doctorId] = 2
+        it[patientId] = 1
+        it[date] = "2022-02-24"
+        it[time] = "13:00:00"
     }
 }

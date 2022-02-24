@@ -4,12 +4,7 @@ import io.ktor.server.application.*
 import io.ktor.server.plugins.*
 import io.ktor.server.routing.*
 import me.x99.repo.*
-import me.x99.routing.data.appointmentRoute
-import me.x99.routing.data.doctorRoute
-import me.x99.routing.data.patientRoute
-import me.x99.routing.data.departmentRoute
-import me.x99.routing.data.diagnosisRoute
-import me.x99.routing.data.patientCardRoute
+import me.x99.routing.data.*
 import me.x99.routing.view.*
 
 fun Application.configureRouting() {
@@ -29,6 +24,7 @@ fun Application.configureRouting() {
         doctorRoute(DoctorRepo())
         patientCardRoute(PatientCardRepo())
         patientRoute(PatientRepo())
+        rootRout(RootRepo())
         //add
         addPatientCardViewRouting(PatientCardRepo())
         addAppointmentViewRouting(AppointmentRepo())

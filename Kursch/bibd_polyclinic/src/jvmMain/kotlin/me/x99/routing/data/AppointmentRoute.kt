@@ -17,9 +17,8 @@ fun Route.appointmentRoute(appointmentRepo: me.x99.repo.AppointmentRepo) {
         }
 
         get("/by/patient/{patientId}") {
-            val patientId = call.parameters["patientId"]
-                ?: throw IllegalArgumentException("Parameter appointment Id not found")
-            appointmentRepo.getByPatients(patientId.toInt())?.let { appointment -> call.respond(appointment) }
+            val patientId = call.parameters["patientId"] ?: ""
+            appointmentRepo.getByPatients(patientId.toInt()).let { appointment -> call.respond(appointment) }
         }
 
         get("/") {

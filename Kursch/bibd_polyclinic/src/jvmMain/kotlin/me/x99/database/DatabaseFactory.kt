@@ -18,6 +18,7 @@ object DatabaseFactory {
             SchemaUtils.create(DepartmentTable)
             SchemaUtils.create(DoctorTable)
             SchemaUtils.create(PatientCardTable)
+            SchemaUtils.create(RootTable)
 
             DepartmentTable.setData()
             DoctorTable.setData()
@@ -25,6 +26,7 @@ object DatabaseFactory {
             DiagnosisTable.setData()
             PatientCardTable.setData()
             AppointmentTable.setData()
+            RootTable.setData()
         }
     }
 

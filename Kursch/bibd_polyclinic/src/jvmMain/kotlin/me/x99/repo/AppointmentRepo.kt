@@ -42,10 +42,10 @@ class AppointmentRepo {
         }
     }
 
-    suspend fun getByPatients(patientId: Int): Appointment? {
+    suspend fun getByPatients(patientId: Int): List<Appointment> {
         return transaction {
             AppointmentTable.select { AppointmentTable.patientId eq patientId }
-                .toAppointments().firstOrNull()
+                .toAppointments()
         }
     }
 

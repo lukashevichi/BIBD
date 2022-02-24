@@ -15,21 +15,21 @@ fun PatientTable.setData() {
         it[id] = 2
         it[login] = "vlad@root.com"
         it[psw] = "root"
-        it[name] = "Владислав"
+        it[name] = "Владимир"
         it[surname] = "Бубликов"
     }
     this.insert {
         it[id] = 3
         it[login] = "vlad2@root.com"
         it[psw] = "root"
-        it[name] = "Владислав"
+        it[name] = "Сергей"
         it[surname] = "Славиков"
     }
     this.insert {
         it[id] = 4
         it[login] = "vlad3@root.com"
         it[psw] = "root"
-        it[name] = "Владислав"
+        it[name] = "Ярослав"
         it[surname] = "Радужников"
     }
     this.insert {
