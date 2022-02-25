@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Polyc</string>
+    <string name="title_home">Home</string>
+    <string name="title_info">Info</string>
+    <string name="title_appointments">Appointments</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_name">Name</string>
+    <string name="prompt_surname">Surname</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_up">register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >3 characters</string>
+    <string name="login_failed">"Login failed. This user probably doesn't exist."</string>
+    <string name="reg_failed">"Registration failed."</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="example_3_empty_input_text">Text is empty</string>
+    <string name="example_3_title">Example 3</string>
+    <string name="example_3_dialog_delete_confirmation">Delete this event?</string>
+    <string name="example_3_input_dialog_title">Enter event title</string>
+    <string name="delete">Delete</string>
+    <string name="close">Close</string>
+    <string name="save">Save</string>
+
+</resources>

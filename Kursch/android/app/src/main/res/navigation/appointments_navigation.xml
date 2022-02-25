@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/appointments_navigation"
+    app:startDestination="@+id/appointments_destination">
+
+    <fragment
+        android:id="@+id/appointments_destination"
+        android:name="by.maxluxs.polyc.ui.appointments.ui.AppointmentsFragment"
+        tools:layout="@layout/fragment_appointments"
+        android:label="@string/title_appointments" />
+
+</navigation>
